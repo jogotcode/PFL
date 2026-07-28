@@ -1,0 +1,107 @@
+:root{
+  --color-bg-dark: #2E2D2E;
+  --color-bg-light: #FFFFFD;
+  --color-accent-light: #EBD1E8;
+  --color-accent-dark: #4B0820;
+  --color-accent-dark-hover: #63102c;
+}
+
+
+*{
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  text-wrap:balance;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  color: aliceblue;
+}
+
+hr{
+  margin-bottom: 5px;
+}
+
+html,body{
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/hpgruesen-cruise-ship-4460493.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* keeps it in place while scrolling, like your #bgImg was trying to do */
+}
+
+ 
+form{
+  position: relative;
+  z-index: 3;
+  width: min(625px,80%);
+  height: 100%;
+  padding: 1.5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(172, 79, 112);
+  border-radius: 10px;
+}
+
+textarea{
+  min-height: 200px;
+}
+
+#submit{
+  width: 45%;
+  height: 10%;
+  padding: 2%;
+  border: none;
+  border-radius: 10px;
+  background-color: #63102c;
+  color: #FFFFFD;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#submit:hover{
+ background-color: #682f42;
+}
+
+.FormTop{
+  width: 100%;
+  min-height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FormQuestion{
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  width: 100%;
+  margin: 0.75rem 0; /* fixed vertical spacing, not tied to container width */
+}
+
+.styleTextBox{
+  width: 100%;
+  height: 2rem;
+  min-height: 0;
+  margin-top: 5px;
+  padding: 0 0.5rem; /* explicit, so browser defaults don't create inconsistency */
+  box-sizing: border-box; /* redundant safety net if * reset ever gets overridden */
+  border-radius: 5px;
+}
+
+#bgoverlay{
+  position: fixed;
+  inset: 0; /* shorthand for top:0; left:0; right:0; bottom:0; */
+  background-color: rgba(184, 18, 76, 0.336); /* see point 2 below */
+  z-index: 0;
+  backdrop-filter: blur(15px);
+}

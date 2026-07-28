@@ -1,0 +1,84 @@
+:root{
+  --color-bg-dark: #2E2D2E;
+  --color-bg-light: #e6c7e0;
+  --color-accent-light: #f9f4f9;
+  --color-accent-dark: #492531;
+  --color-accent-dark-hover: #63102c;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+  text-wrap:balance;
+}
+
+#Logocontent{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#Logocontent img{
+  width: 10%;
+  height: auto;
+}
+
+body{
+  background-image: url("./images/pexels-beach-1850059.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* keeps it in place while scrolling, like your #bgImg was trying to do */
+}
+
+main{
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#navmunipluater{
+  width: 99%;
+  margin: auto;
+}
+
+
+.AboutContent{
+  width: 100%;
+  flex: 1; /* fills remaining space in main instead of 100% of it */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.AboutContentText{
+  width: 65%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-wrap: balance;
+  background-color: oklch(62.152% 0.1683 1.781 / 0.543);
+  border-radius: 10px;
+  border-bottom:5px solid var(--color-bg-dark);
+  border-right: 5px solid var(--color-bg-dark);
+  box-shadow: 10px 10px 100px 5px #2E2D2E;
+  
+}
+
+.AboutContent_P1{
+  font-size: clamp(1rem, 10%, 1.5rem);
+  text-align: center;
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+  text-wrap: balance;
+}
