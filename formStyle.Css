@@ -101,7 +101,7 @@ textarea{
 #bgoverlay{
   position: fixed;
   inset: 0; /* shorthand for top:0; left:0; right:0; bottom:0; */
-  background-color: rgba(184, 18, 76, 0.336); /* see point 2 below */
+  background-color: rgba(239, 235, 236, 0.336); /* see point 2 below */
   z-index: 0;
   backdrop-filter: blur(15px);
 }
