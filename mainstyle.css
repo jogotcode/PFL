@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Norican&display=swap');
+
 :root{
   --color-bg-dark: #2E2D2E;
   --color-bg-light: #d3afd3;
-  --color-accent-light: #fffdff;
+  --color-accent-light: #f5f5f5;
   --color-accent-dark: #4B0820;
   --color-accent-dark-hover: #63102c;
+  --color-text-light: #d7819f;
 }
 
-h1,h2,h3{
+h1,h2{
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--color-accent-dark-hover);
+}
+
+.Font1{
+  font-family: norican, cursive;
 }
 
 p,pre{
@@ -21,6 +29,7 @@ p,pre{
   text-wrap:balance;
   overflow-wrap: break-word;
   word-break: break-word;
+  color: var(--color-text-light);
 }
 
 html,body{
@@ -33,7 +42,6 @@ body{
   z-index: 2;
   font-family: Arial, sans-serif;
   background-color: var(--color-accent-light);
-  color: var(--color-bg-light);
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -60,9 +68,9 @@ footer{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin-top: 1%;
+  margin-top: 10px;
   padding: 0.5% 2%;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .NavOptions{
@@ -88,7 +96,6 @@ footer{
   height: auto;
   padding: 0.5em 0.4em;
   background-color: rgba(0, 0, 0, 0);
-  color: var(--color-bg-light);
   border: none;
   outline: none;
   border-radius: 10px;
@@ -137,7 +144,6 @@ footer{
   max-height: fit-content;
   padding: 1%;
   background-color: rgba(255, 255, 253, 0.85);
-  color: var(--color-bg-dark);
   border-radius: 8px;
 }
 
@@ -157,7 +163,6 @@ footer{
 
 .introductionContent_Title{
   font-size: clamp(1.5rem, 4vw, 2.25rem);
-  color: var(--color-accent-dark);
 }
 
 #comptitle{
@@ -165,9 +170,8 @@ footer{
  z-index: 4;
  top: 1rem;
  left: 1.6rem;
- font-size: clamp(1.5rem, 7vw, 3rem);
+ font-size: clamp(1.5rem, 10vw, 4rem);
  max-width: calc(100% - 3.2rem);
- color: var(--color-accent-light);
 }
 
 .HeroBanner{
@@ -189,6 +193,9 @@ footer{
   align-items: center;
   justify-content: center;
   background-color: var(--color-accent-dark);
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px 5px #2e2d2e31;
+  overflow: hidden;
 }
 
 .DestinationPanel{
@@ -199,12 +206,14 @@ footer{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .DestinationPanelImage{
   width: 100%;
   height: 100%;
   object-fit:cover;
 }
+
 
 .DestinationPanelText{
   position: absolute;
@@ -227,7 +236,6 @@ footer{
 }
 
 .DestinationPanelDescription{
-  color: var(--color-accent-light);
   height: 100%;
   font-size: clamp(1rem, 3vw, 1.4rem);
   font-weight: 300;
@@ -240,7 +248,6 @@ footer{
   padding: 2%;
   margin: 2%;
   background-color: var(--color-accent-dark);
-  color: var(--color-bg-light);
   border: none;
   cursor: pointer;
   border-radius: 4px;
@@ -255,14 +262,12 @@ footer{
  font-size: clamp(1.2em, 2.5vw, 1.5em);
  width: min(80vw, 80rem);
  max-width: 80rem;
- color: var(--color-bg-light);
 }
 
 .introductionContent_P2{
   font-size: clamp(1em, 2vw, 1.2em);
   width: min(80vw, 80rem);
   max-width: 80rem;
-  color: var(--color-bg-light);
 }
 
 /* ---------- INFO PANELS ---------- */
@@ -307,7 +312,6 @@ footer{
   text-align: center;
   margin-bottom: 1%;
   margin-top: 0.4em;
-  color: var(--color-accent-light);
   text-transform: capitalize;
 }
 
@@ -317,7 +321,6 @@ footer{
   padding: 2%;
   margin: 2%;
   background-color: var(--color-accent-dark);
-  color: var(--color-bg-light);
   border-radius: 1px;
   border: none;
   cursor: pointer;
@@ -325,7 +328,6 @@ footer{
 
 .InfoPanelButton:hover{
   background-color: var(--color-bg-light);
-  color: #63102c;
 }
 
 .InfoPanelDescription{
@@ -334,7 +336,6 @@ footer{
   font-size: 1em;
   text-align: center;
   flex-grow: 1;
-  color: var(--color-accent-light);
 }
 
 @media (max-width: 700px){
@@ -359,6 +360,42 @@ footer{
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+
+.imgbreak2{
+  width: 100dvw;
+  height: 50dvh;
+  position: relative;
+  top: 0;
+  background-image: url("./images/11514282-sunset-6911736_1920.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.imgbreakTitle{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(1.25rem, 10vw, 5rem);
+  color: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-text-stroke: 3px rgba(248, 244, 244, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.imgbreakTitle:hover{
+  color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-text-stroke: 3px rgba(248, 244, 244, 0.5);
 }
 
 .bgoverlay{

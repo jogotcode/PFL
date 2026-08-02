@@ -70,8 +70,6 @@ main{
   text-wrap: balance;
   background-color: oklch(62.152% 0.1683 1.781 / 0.543);
   border-radius: 10px;
-  border-bottom:5px solid var(--color-bg-dark);
-  border-right: 5px solid var(--color-bg-dark);
   box-shadow: 10px 10px 100px 5px #2E2D2E;
   
 }
