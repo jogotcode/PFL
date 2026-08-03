@@ -379,13 +379,12 @@ footer{
   width: 80%;
   margin: auto;
   text-align: center;
-  white-space: nowrap;
   position: absolute;
   z-index: 3;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: clamp(1.25rem, 10vw, 5rem);
+  font-size: clamp(1.5rem, 8vw, 5rem);; /* real floor + slightly lower ceiling ratio */
   color: rgba(255, 255, 255, 0.5);
   border: 2px solid rgba(255, 255, 255, 1);
   -webkit-text-stroke: 3px rgba(248, 244, 244, 0.2);
