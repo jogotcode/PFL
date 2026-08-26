@@ -1,0 +1,217 @@
+
+
+
+.TransitionPageTitle{
+  flex-grow: 1;
+  font-size: 3rem;
+}
+
+.contentBg{
+  position:relative;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 90%;
+  height: 99%;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: .5rem .5rem 0.5rem 0.5rem;
+  backdrop-filter: blur(5px);
+  gap: 1rem; /* space between h1 and #TransitionPageContent */
+}
+
+#TransitionPageContent{
+  position:relative;
+  width: 99%;
+  height: auto;
+  min-height: 90%;
+  background-image: radial-gradient(circle, rgba(15, 16, 57, 1), rgba(48, 91, 147, 0.05));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: .5rem .5rem 0.5rem 0.5rem;
+  padding: 1rem;
+  gap: 2rem; /* space between SpotlightDealSection, NormalDealsSection, p, button */
+}
+
+#TransitionPageContent p{
+  font-size: 1rem;
+}
+
+#TransitionPageContent button{
+  min-width: 70%;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: var(--color-text-light);
+  border: 2px solid var(--color-accent-light);
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* margin-top removed — spacing now handled by parent's gap */
+}
+
+#TransitionPageContent button:hover{
+  background-color: var(--color-accent-light);
+  color: var(--color-bg-dark);
+  border: 2px solid var(--color-bg-dark);
+  min-width: 60%;
+}
+
+.SpotlightDealSection{
+  position:relative;
+  width: 100%;
+  height:25rem;
+  min-height: 20rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  padding: .5rem;
+  border-radius: .5rem .5rem 0.5rem 0.5rem;
+  box-shadow: 2px 5px 5px hsl(0deg 0% 0% / 0.42);
+  overflow: hidden;
+}
+
+.NormalDealsSection{
+  position:relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem; /* space between h2, p, .ContainDeals */
+}
+
+.ContainDeals{
+  position:relative;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% - 1.1rem) / 2);
+  gap: 1rem; /* now handles spacing between .Dealitem cells, both directions */
+  padding: 5px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin; /* auto | thin | none */
+  scrollbar-color: var(--color-accent-light) rgba(255, 255, 255, 0.0); /* thumb track */
+}
+
+.Dealitem{
+  position:relative;
+  height: 20rem;
+  min-height: 0px;
+  padding: .5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  border-radius: .5rem .5rem 0.5rem 0.5rem;
+  box-shadow: 2px 5px 5px hsl(0deg 0% 0% / 0.42);
+  overflow: hidden;
+  /* margin: .5rem removed — spacing now handled by .ContainDeals gap */
+}
+
+.DealTitle{
+  width: 100%;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  font-size: clamp(1.5rem , 2vw, 5rem);
+  background-image: radial-gradient(circle, rgba(255,255,255,0.25), rgba(255,255,255,0));
+}
+
+.DealDescription{
+  position: relative;
+  z-index: 2;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  flex-grow: 0;
+  text-wrap: balance;
+
+}
+
+
+.CruiseForEveryoneSection {
+  width: 100%;
+  height: auto;
+  
+}
+
+.CruiseBrandContainer{
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(200px, 35vw, 350px), 350px));
+  gap: .5rem;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.CruiseBrand{
+  position: relative;
+  width: clamp(200px, 35vw, 350px);
+  aspect-ratio: 1 / 1;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+}
+
+.CruiseBrand:hover{
+  transform: scale(1.05);
+  transition: all 10s ease-in-out;
+}
+
+.CruiseBrand p { 
+  position:absolute;
+  z-index: 1; 
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.CruiseBrand:hover p{
+  opacity: 1;
+  transition: all .5s ease-in-out;
+}
+
+.CruiseBrand h2{
+  position: relative;
+   z-index: 1; 
+}
+
+.CruiseBrand img{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  border-radius: 5px;
+  filter: brightness(1);
+  transition: all .3s;
+}
+
+.CruiseBrand:hover img {
+  transform: translate(-50%, -50%) scale(1.1);/* i have to reapply teh transform rule*/
+  filter: brightness(0.7);
+
+}
+
+
+

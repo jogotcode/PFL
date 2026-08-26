@@ -1,10 +1,3 @@
-:root{
-  --color-bg-dark: #2E2D2E;
-  --color-bg-light: #e6c7e0;
-  --color-accent-light: #f9f4f9;
-  --color-accent-dark: #492531;
-  --color-accent-dark-hover: #63102c;
-}
 
 *{
   box-sizing: border-box;
@@ -22,12 +15,12 @@
 }
 
 #Logocontent img{
-  width: 10%;
+  width:30%;
   height: auto;
 }
 
 body{
-  background-image: url("./images/pexels-beach-1850059.jpg");
+  background-image: url("/images/CruiseDealImgs/huems04-my-ship-3688195_1920.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -58,19 +51,23 @@ main{
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  border: solid 1px var(--color-accent-light);
 }
 
+
 .AboutContentText{
-  width: 65%;
-  height: clamp(0% , 60%,content);
+  width: 35%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: space-around;
   text-wrap: balance;
-  background-color: oklch(62.152% 0.1683 1.781 / 0.543);
   border-radius: 10px;
   box-shadow: 10px 10px 100px 5px #2E2D2E;
+  backdrop-filter:blur(10px);
+  border: solid 1px var(--color-accent-light);
+  text-wrap: balance;
   
 }
 

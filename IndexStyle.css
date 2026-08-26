@@ -1,47 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Norican&display=swap');
 
-:root{
-  --color-bg-dark: #2E2D2E;
-  --color-bg-light: #d3afd3;
-  --color-accent-light: #f5f5f5;
-  --color-accent-dark: #4B0820;
-  --color-accent-dark-hover: #63102c;
-  --color-text-light: #d7819f;
-}
 
-h1,h2{
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: var(--color-accent-dark-hover);
-}
-
-.Font1{
-  font-family: norican, cursive;
-}
-
-p,pre{
-  font-family: monospace;
-}
-
-*{
-  box-sizing: border-box;
-  padding: 0%;
-  margin: 0%;
-  text-wrap:balance;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  color: var(--color-text-light);
-}
-
-html,body{
-  width: 100%;
-  height: 100%;
-}
 
 body{
   position: relative;
   z-index: 2;
   font-family: Arial, sans-serif;
-  background-color: var(--color-accent-light);
+  background-color: var(--color-bg-dark);
   line-height: 1.6;
   display: flex;
   flex-direction: column;
@@ -53,7 +17,6 @@ footer{
   width: 100%;
   padding: 0.75rem 0;
   text-align: center;
-  color: var(--color-bg-dark);
   font-size: 0.85rem;
 }
 
@@ -62,7 +25,7 @@ footer{
   width: 100%;
   min-height: min(60px,8vh);
   height: auto;
-  background-color: var(--color-accent-dark);
+  border: solid 1px var(--color-accent-light);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -137,15 +100,37 @@ footer{
 
 .UserActionsContent{
   position: absolute;
-  bottom: 6rem;
+  bottom: 8rem;
   left: 1.6rem;
   width: min(20rem, calc(100% - 3.2rem));
   min-height: 2rem;
   max-height: fit-content;
   padding: 1%;
-  background-color: rgba(255, 255, 253, 0.85);
+  background-color: var(--color-bg-dark);
   border-radius: 8px;
+  border: 2px solid var(--color-accent-light);
 }
+
+.UserActionBtn{
+  width: 100%;
+  height: max(50px,5%);
+  padding: 2%;
+  margin: 2%;
+  border: solid 1px var(--color-accent-light);
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  transition: all .15s ease-in-out;
+}
+
+.UserActionBtn:hover{
+  width: 95%;
+}
+
+
+
+
 
 /* ---------- INTRO TEXT ---------- */
 .introductionContent{
@@ -175,6 +160,7 @@ footer{
 }
 
 .HeroBanner{
+  position: relative;
   width: 100%;
   height: auto;
   padding: 10px;
@@ -242,22 +228,6 @@ footer{
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.735);
 }
 
-.UserActionBtn{
-  width: 100%;
-  height: max(50px,8%);
-  padding: 2%;
-  margin: 2%;
-  background-color: var(--color-accent-dark);
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: clamp(0.8rem, 2vw, 1rem);
-}
-
-.UserActionBtn:hover{
-  background-color: var(--color-accent-dark-hover);
-}
-
 .introductionContent_P1{
  font-size: clamp(1.2em, 2.5vw, 1.5em);
  width: min(80vw, 80rem);
@@ -293,10 +263,10 @@ footer{
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: var(--color-accent-dark-hover);
-  border: 3px solid var(--color-bg-dark);
   border-radius: 5px;
+  border: solid 1px var(--color-accent-light);
   box-shadow: 10px 10px 10px 5px #2e2d2e31;
+  overflow: hidden;
 }
 
 .InfoPanelImage{
@@ -320,14 +290,15 @@ footer{
   height: 8%;
   padding: 2%;
   margin: 2%;
-  background-color: var(--color-accent-dark);
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 1px var(--color-accent-light);
   border-radius: 1px;
-  border: none;
   cursor: pointer;
+  transition: all .15s ease-in-out;
 }
 
 .InfoPanelButton:hover{
-  background-color: var(--color-bg-light);
+  width: 75%;
 }
 
 .InfoPanelDescription{
@@ -355,7 +326,7 @@ footer{
   height: 25dvh;
   position: relative;
   top: 0;
-  background-image: url("./images/satyress-church-5894267_1920.jpg");
+  background-image: url("/images/mainPageimages/michelle-maria-santorini-416136_1920.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -364,14 +335,24 @@ footer{
 
 .imgbreak2{
   width: 100dvw;
-  height: 50dvh;
+  height: auto;
   position: relative;
   top: 0;
-  background-image: url("./images/11514282-sunset-6911736_1920.jpg");
+  background-image: url("/images/mainPageimages/pexels-abel-acosta-2549588-14199477.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  z-index: 0;
+}
+
+.imgbreak2 section{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 3%;
 }
 
 
@@ -384,7 +365,7 @@ footer{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: clamp(1.5rem, 8vw, 5rem);; /* real floor + slightly lower ceiling ratio */
+  font-size: clamp(1.5rem, 8vw, 300%); /* real floor + slightly lower ceiling ratio */
   color: rgba(255, 255, 255, 0.5);
   border: 2px solid rgba(255, 255, 255, 1);
   -webkit-text-stroke: 3px rgba(248, 244, 244, 0.2);
@@ -404,3 +385,123 @@ footer{
   z-index: 1;
   backdrop-filter: blur(10px);
 }
+
+.BenifitsContainer{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.BenefitInfoPanel{
+  position: relative;
+  padding: 3%;
+  padding-top: 1%;
+  width: 22rem;
+  min-width: 20rem;
+  max-width: 100%;
+  height: 32rem;
+  min-height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px 5px #2e2d2e31;
+  background-image: linear-gradient(to top,rgba(6, 17, 103, 0.5) ,rgba(6, 17, 103, 0));
+}
+
+.BenefitInfoPanel p{
+  font-size: clamp(1em, 1.2vw, 1.5em);
+}
+
+.BenefitInfoPanel h3{
+  font-size: 1.5rem
+}
+
+
+.BenifitimgbreakTitle{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  font-size: clamp(1.5rem, 8vw, 300%); /* real floor + slightly lower ceiling ratio */
+  color: rgba(255, 255, 255, 0.5);
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-text-stroke: 3px rgba(248, 244, 244, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.BenifitimgbreakTitle:hover{
+  color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-text-stroke: 3px rgba(248, 244, 244, 0.5);
+}
+
+.footercontent{
+  position: relative;
+  height: auto;
+  padding: 1%;
+  min-height: 20dvh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ContactSection{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ContactOptions{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.ContactOptions li{
+  list-style: none;
+}
+
+.FooterNavOptions{
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.FooterNavBar{
+  height: 100%;
+  width: 100%;
+}
+
+.FooterNavOptions button{
+  background-color: rgba(0, 0, 0, 0);
+  min-width: 2rem;
+  border: none;
+  border-bottom: solid 1px var(--color-accent-light);
+  font-size: large;
+}
+
+.FooterLogo{
+  height: 10rem;
+  aspect-ratio: 1/1;
+}
+
+.Logosection{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.reserve{padding-top: 1%;}

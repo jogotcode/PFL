@@ -1,0 +1,17 @@
+{
+  "CruiseBrands":[
+    {"BrandName":"Virgin Voyages" , "BrandDescription":"temporary Description about cool cruises ","BrandImage":"/images/CruiseBrandImgs/Virgin Voyages.jpg"},
+    {"BrandName":"Royal Caribbean" , "BrandDescription":"temporary Description about cool cruises","BrandImage":"/images/CruiseBrandImgs/Royal Caribbean.jpg"},
+    {"BrandName":"Disney Cruise Lines" , "BrandDescription":"temporary Description about cool cruises","BrandImage":"/images/CruiseBrandImgs/Disney Cruise Lines.jpeg"},
+    {"BrandName":"Princess Cruises" , "BrandDescription":"temporary Description about cool cruises","BrandImage":"/images/CruiseBrandImgs/Princess Cruise.jpeg"},
+    {"BrandName":"Carnival Cruise Line" , "BrandDescription":"temporary Description about cool cruises","BrandImage":"/images/CruiseBrandImgs/Carnival Cruise.jpeg"},
+    {"BrandName":"Norwegian Cruise Line" , "BrandDescription":"temporary Description about cool cruises","BrandImage":"/images/CruiseBrandImgs/Norwegian Cruise.jpeg"},
+    {"BrandName":"Celebrity Cruises" , "BrandDescription":"temporary Description about cool cruises","BrandImage":"/images/CruiseBrandImgs/Celebrity Cruises.jpg"},
+    {"BrandName":"Viking Cruises" , "BrandDescription":"temporary Description about cool cruises","BrandImage":"/images/CruiseBrandImgs/Viking.jpg"},
+    {"BrandName":"National Geographic x Lindblad Expeditions" , "BrandDescription":"temporary Description about cool cruises","BrandImage":"/images/CruiseBrandImgs/National Geographic.jpg"},
+    {"BrandName":"Four Seasons Yachts" , "BrandDescription":"temporary Description about cool cruises","BrandImage":"/images/CruiseBrandImgs/Four Seasons Yachts.jpeg"},
+    {"BrandName":"Regent Seven Seas Cruises" , "BrandDescription":"temporary Description about cool cruises","BrandImage":"/images/CruiseBrandImgs/Regent Secen Seas Cruises.jpg"}
+    
+  ]
+}
+

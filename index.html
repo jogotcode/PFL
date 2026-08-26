@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PFL Family Travel</title>
-<link rel="stylesheet" href="mainstyle.css">
+<link rel="stylesheet" href="./SharedContent/StyleVariables.css">
+<link rel="stylesheet" href="IndexStyle.css">
 </head>
 <body>
 
@@ -16,7 +17,7 @@
 
       <div class="DestinationContent">
         <div class="DestinationPanel">
-          <img class="DestinationPanelImage" src="./images/michelle-maria-santorini-416136_1920.jpg" alt="Santorini cliffside village at sunset">
+          <img class="DestinationPanelImage" src="/images/mainPageimages/Main1.jpg" alt="Santorini cliffside village at sunset">
           <div class="DestinationPanelText">
             <p class="DestinationPanelDescription">Discover destinations across the globe</p>
           </div>
@@ -24,16 +25,16 @@
       </div>
 
       <div class="UserActionsContent StdLayout">
-        <button class="UserActionBtn" onclick="document.location='SurveyPage.html'">Family Vacations</button>
-        <button class="UserActionBtn" onclick="document.location='SurveyPage.html'">Book Cruise</button>
-        <button class="UserActionBtn">FAQ</button>
+        <button class="UserActionBtn" onclick="UseHotelResortFormat()">Family Vacations</button>
+        <button class="UserActionBtn" onclick="UseCruiseFormat()">Book Cruise</button>
+        <button class="UserActionBtn" onclick="document.location='./FAQContent/FAQPage.html'">FAQ</button>
       </div>
 
       <nav class="NavBar" aria-label="Main navigation">
         <div class="NavOptions">
-          <button onclick="document.location='index.html'">Home</button>
-          <button onclick="document.location='About.html'">About</button>
-          <button>FAQ</button>
+          <button onclick="document.location='Index.html'">Home</button>
+          <button onclick="document.location='./AboutPAgeContent/About.html'">About</button>
+          <button onclick="document.location='./FAQContent/FAQPage.html'">FAQ</button>
         </div>
       </nav>
 
@@ -48,6 +49,8 @@
     <div class="introductionContent StdLayout">
       <h1 class="introductionContent_Title Font1">Welcome to Our Travel Agency</h1>
 
+
+      
       <p class="introductionContent_P1">
         PFL Family Travel partners with top hotels, cruise lines,
         and experience providers to give you VIP perks,
@@ -62,42 +65,112 @@
 
     <div class="InfoPanelContent">
       <div class="InfoPanel">
-        <img class="InfoPanelImage" src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=800&q=70" alt="Resort pool overlooking the ocean">
+        <img class="InfoPanelImage" src="/images/mainPageimages/Hotel1.jpg" alt="Resort pool overlooking the ocean">
         <h3 class="InfoPanelTitle">Hotels &amp; Resorts</h3>
         <p class="InfoPanelDescription">
           Stay at the world's best properties with exclusive perks that go beyond what you'll find online.
           Think complimentary daily breakfast, upgrades, resort credits, and VIP status at check-in.
         </p>
-        <button class="InfoPanelButton" onclick="document.location='SurveyPage.html'">Explore Hotels &amp; Resorts</button>
+        <button class="InfoPanelButton" onclick="UseHotelResortFormat()">Explore Hotels &amp; Resorts</button>
       </div>
 
       <div class="InfoPanel">
-        <img class="InfoPanelImage" src="https://images.unsplash.com/photo-1548574505-5e239809ee19?w=800&q=70" alt="Cruise ship departing at golden hour">
+        <img class="InfoPanelImage" src="/images/mainPageimages/Cruise1.jpg" alt="Cruise ship departing at golden hour">
         <h3 class="InfoPanelTitle">Cruises</h3>
         <p class="InfoPanelDescription">
           Set sail with leading cruise partners and enjoy exclusive perks on board.
           Think extra amenities, seamless planning, and a more elevated way to experience life at sea.
         </p>
-        <button class="InfoPanelButton" onclick="document.location='SurveyPage.html'">Explore Cruises</button>
+        <button class="InfoPanelButton" onclick="UseCruiseFormat()">Explore Cruises</button>
       </div>
 
       <div class="InfoPanel">
-        <img class="InfoPanelImage" src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=70" alt="Turquoise water and tropical coastline">
+        <img class="InfoPanelImage" src="/images/mainPageimages/Trip1.jpg" alt="Turquoise water and tropical coastline">
         <h3 class="InfoPanelTitle">Design Your Trip</h3>
         <p class="InfoPanelDescription">
           Share a few details below to help us understand your travel vision.
         </p>
-        <button class="InfoPanelButton" onclick="document.location='SurveyPage.html'">Start Designing</button>
+        <button class="InfoPanelButton" onclick="document.location='./SurveyPageContent/SurveyPage.html'">Start Designing</button>
       </div>
     </div>
 
     <div class="imgbreak2">
       <div class="bgoverlay"></div>
+      <section>
+        <h1 class="BenifitimgbreakTitle">Benifits of Traviling With PFl </h1>
+        <div class="BenifitsContainer Font1">
+          
+          <div class="BenefitInfoPanel">
+            <h3>Advate for all your travels needs</h3>
+
+            <p> 
+              Need help with special accommodations, was your flight cancelled or do you need to make a change in your travel plans? Booking your family vacation with PFL Family Travel will give you access to an advocate with partner relationships that will get things done! So we are here to help with all your travel needs and anything else that may arise.
+            </p>
+
+          </div>
+
+          <div class="BenefitInfoPanel">
+            <h3>Advate for all your travels needs</h3>
+
+            <p> 
+              We partner with Hotels, Resorts and Cruises around the world that allows us to offer additional perks you cannot get with your own booking, such as VIP status, late check-in, free onboard cruise credits and more.
+
+          </div>
+
+          <div class="BenefitInfoPanel">
+            <h3>We can save you time:</h3>
+            
+
+            <p> 
+              Researching different cruise options, hotel and resort amenities, excursions, etc, can be a long and exhausting process. We do all the research and planning for you based on your preferences to create your entire vacation.
+            </p>
+
+          </div>
+           
+
+          
+        </div>
+      </section>
     </div>
+
+    
 
   </div>
   <footer>
-    <p>&copy; PFL Family Travel all rights reserved.</p>
+    <div class="footercontent">
+      <section class="ContactSection">
+      <h2>Contact</h2>
+      <ul class="ContactOptions">
+        <li>305-204-2972</li>
+        <li>zerah.shelton@FamilyTravel</li>
+        <li>1009 Emma Street,Phoenix AZ</li>
+        <li><a href="https://www.facebook.com/PFLfamilytravel"><img src="/images/Icons/icons8-facebook-100.png"></a></li>
+      </ul>
+      </section>
+
+      <section class="Logosection">
+        <img class="FooterLogo" src="/images/Icons/Black and Grey Minimalist Shell Beach Club Logo (1).png">
+        <p>We plan your family vacation for you so all you have to do is show up and have fun! </p>
+        <p>FORA Certified Advisor 2026</p>
+        <p>PFL Family Travel is an affiliate of <a href="https://www.foratravel.com/">Fora</a> Travel, a <a href="https://www.virtuoso.com/travel">VIRTUOSO</a> member </p>
+        <small> Policy / Terms and Conditions / Website Terms of Use</small>
+      </section>
+
+      <section class="FooternavSection">
+        <nav class="FooterNavBar" aria-label="Main navigation">
+        <div class="FooterNavOptions">
+          <button onclick="document.location='Index.html'">Home</button>
+          <button onclick="document.location='./AboutPAgeContent/About.html'">About</button>
+          <button onclick="document.location='./FAQContent/FAQPage.html'">FAQ</button>
+          <button onclick="document.location='./DealsContent/DealsPage.html'">Deals</button>
+        </div>
+        </nav>
+
+      </section>
+
+    </div>
+    <p class="reserve">&copy; PFL Family Travel all rights reserved.</p>
   </footer>
+  <script src="/Indexjs.js"></script>
 </body>
 </html>
