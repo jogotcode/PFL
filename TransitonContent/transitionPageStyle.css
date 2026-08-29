@@ -106,6 +106,12 @@
   scrollbar-color: var(--color-accent-light) rgba(255, 255, 255, 0.0); /* thumb track */
 }
 
+@media (max-width: 768px) {
+  .ContainDeals {
+    grid-auto-columns: 100%;
+  }
+}
+
 .Dealitem{
   position:relative;
   height: 20rem;
@@ -167,10 +173,6 @@
   transition: all .5s ease-in-out;
 }
 
-.CruiseBrand:hover{
-  transform: scale(1.05);
-  transition: all 10s ease-in-out;
-}
 
 .CruiseBrand p { 
   position:absolute;
