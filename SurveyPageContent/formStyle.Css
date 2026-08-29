@@ -51,7 +51,7 @@ textarea{
 input{
   background-color: rgba(255, 255, 255, 0.35);
   border: none;
-  border-bottom: solid 2px var(--color-accent-light);
+  box-shadow: 0px 0px 5px 5px #2e2d2e31;
   color: black;
 }
 
@@ -105,5 +105,5 @@ input{
   inset: 0; /* shorthand for top:0; left:0; right:0; bottom:0; */
   background-color: rgba(239, 235, 236, 0.336); /* see point 2 below */
   z-index: 0;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(50px);
 }
